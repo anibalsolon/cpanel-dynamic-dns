@@ -1,0 +1,12 @@
+[Unit]
+Description=Run cpanel-dyndns every 30 minutes
+Requires=cpanel-dyndns.service
+
+[Timer]
+Unit=cpanel-dyndns.service
+OnUnitInactiveSec=30m
+RandomizedDelaySec=30m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

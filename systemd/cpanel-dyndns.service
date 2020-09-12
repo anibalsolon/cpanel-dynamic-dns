@@ -1,0 +1,9 @@
+[Unit]
+Description=Run cpanel-dyndns
+Wants=cpanel-dyndns.timer
+
+[Service]
+ExecStart=
+
+[Install]
+WantedBy=multi-user.target
